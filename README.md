@@ -4,6 +4,8 @@
 
 This project will demonstrate subscribing to crypto ticker (price) data for Binance, Bittrex, and Bitfinex. It will publishe this data to Kafka, and a separate consumer app will listen for these Kafka messages and store them in either .CSV files or a SQL database.
 
+If you want to peek at the expected output, the *sample_csv* directory contains some sample .CSV files that were generanted by running the app for 5 minutes (the Binance file for this period was not included because it was much larger).
+
 ## Configuration
 
 ### Visual Studio
