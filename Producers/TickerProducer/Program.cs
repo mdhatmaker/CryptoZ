@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Diagnostics;
 using CryptoZ.Tools;
+using CryptoZ.Exchanges;
 
 namespace CryptoZ
 {

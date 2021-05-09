@@ -6,16 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BinanceExchange.cs" />
+    <Compile Remove="BitfinexExchange.cs" />
+    <Compile Remove="BittrexExchange.cs" />
+    <Compile Remove="ITickerProducer.cs" />
     <Compile Remove="KafkaProducer.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Binance.Net" Version="6.8.2" />
-    <PackageReference Include="Bitfinex.Net" Version="3.3.0" />
-    <PackageReference Include="Bittrex.Net" Version="4.2.2" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\Exchanges\Exchanges.csproj" />
     <ProjectReference Include="..\..\Tools\Tools.csproj" />
   </ItemGroup>
 
