@@ -136,7 +136,7 @@ namespace CryptoZ
         static async Task DemoKlines()
         {
             string symbol = "BTCUSDT";
-            var klines = await binance.Klines(symbol);
+            var klines = await binance.GetKlines(symbol);
             foreach (var kl in klines)
             {
                 Console.WriteLine($"{symbol} {ToStr(kl)}");
